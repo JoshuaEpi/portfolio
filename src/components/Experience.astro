@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+{
+    date: "noviembre de 2023 - enero de 2024",
+    title: "Soporte Técnico de Tecnología - GAOTek Inc.",
+    description:
+      "Trabajé en el equipo de soporte técnico, donde me encargué de la creación de páginas web y hojas de datos, así como de la optimización de motores de búsqueda (SEO). Brindé soporte técnico a usuarios finales a través de correo electrónico para la plataforma de Amazon. Además, actualicé hojas de datos y colaboré en el desarrollo de estrategias de marketing y ventas, incluyendo el ámbito del marketing digital. Durante este tiempo, también adquirí experiencia en protocolos de red y sistemas operativos.",
+    link: "", // Puedes agregar un enlace si es relevante
+},
+{
+    date: "junio de 2023 - agosto de 2023",
+    title: "Desarrollador Front-End - Vectorial",
+    description:
+      "Trabajé como desarrollador front-end en Lima, Perú. Durante este periodo, me enfoqué en corregir errores de diseño, funcionalidad y rendimiento en páginas web utilizando herramientas como Chrome DevTools, Visual Studio Code, Next.js y React. Gestioné el código fuente y el control de versiones a través de Git y GitHub, contribuyendo así al éxito del equipo de desarrollo.",
+    link: "", // Puedes agregar un enlace si es relevante
+},
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
